@@ -6,10 +6,10 @@ import { Navbar } from '../../components/ui/Navbar';
 export const RoutesDashboard = () => {
   return (
     <>
-    <Navbar/>
+    {/* <Navbar/> */}
      <div className="container">
         <Routes>
-                <Route path="/PageHome" element={<PageHome/>} />
+                <Route path="/*" element={<PageHome/>} />
             </Routes>
         </div>
     </>
