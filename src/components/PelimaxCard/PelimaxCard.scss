@@ -1,0 +1,45 @@
+.item {
+  display: flex;
+  flex-direction: row;
+}
+.children {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6px;
+  &.small-first {
+    margin-top: 35.5px;
+    margin-left: 64px;
+    // margin-left: 110px;
+  }
+  &.small-second {
+    margin-top: 35.5px;
+    padding-left: 3.5px;
+  }
+  &.small-third {
+    margin-top: 35.5px;
+    padding-left: 3.5px;
+  }
+  &.small-fourth {
+    margin-top: 35.5px;
+    padding-left: 3.5px;
+  }
+}
+.image {
+  position: absolute;
+  top: 28%;
+  left: 33%;
+  &--complete {
+    margin: 9px 30px 10px 16px;
+  }
+}
+.rounded {
+  margin-top: 15px;
+  margin-left: 38px;
+  background-color: #f5f5f5;
+  position: relative;
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+  opacity: 1;
+}
+

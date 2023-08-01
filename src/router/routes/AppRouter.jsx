@@ -2,12 +2,12 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { RoutesDashboard } from "./RoutesDashboard";
 
-export const AppRouter = () => {
+export default function ({}) {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/*" element={<RoutesDashboard/>} />
+        <Route path="/*" element={<RoutesDashboard />} />
       </Routes>
     </BrowserRouter>
   );
-};
+}

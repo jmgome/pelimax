@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./LibertyHeader.scss";
 import images from "../LibertyHeader/icons/images.jpeg";
 import { FormControl, InputLabel, MenuItem, Select, TextField } from "@mui/material";
+import PelimaxCard from "../../PelimaxCard/PelimaxCard";
 
 export default function () {
   const [profileData, setProfileData] = useState(false);

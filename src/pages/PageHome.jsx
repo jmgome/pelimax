@@ -1,13 +1,15 @@
-import React from 'react'
+import React from "react";
+import LibertyHeader from "../components/basic/LibertyHeader/LibertyHeader";
+import images from "../components/basic/LibertyHeader/icons/images.jpeg";
+import PelimaxCard from "../components/PelimaxCard/PelimaxCard";
 
 const PageHome = () => {
-
   return (
     <div>
-      Pagina principal
-      <h1>Aqui deben de ir los componentes</h1>
+      <LibertyHeader />
+      <PelimaxCard src={images} />
     </div>
-  )
-}
+  );
+};
 
-export default PageHome
+export default PageHome;
