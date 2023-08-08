@@ -7,17 +7,31 @@ export default function ({
   type,
   imageClassName,
   style,
-  onClick
+  onClick,
+  movies,
 }) {
+  console.log(movies);
   return (
-    <div className="item" style={style}>
-      {src && (
-        <div className={`${type}`}>
-          <img src={src} alt="img" className={`${imageClassName}`} />
+    <div>
+      {movies.map((movie, index) => (
+        <div className="item" style={style} key={index}>
+          {/* {src && ( */}
+          <div className={`children ${imageClassName}`}>{children}</div>
+          <div>
+            <img src={movie.poster_path} imageClassName={imageClassName} />
+          </div>
+          <div>
+            <h1>{movie.title}</h1>
+          </div>
+          <div>
+            <h3>Sipnosis</h3>
+            <p>{movie.overview}</p>
+            <h2>calificación</h2>
+            <h1>{movie.vote_average}</h1>
+          </div>
+          <div onClick={onClick} />
         </div>
-      )}
-      <div className={`children ${className}`}>{children}</div>
-      <div onClick={onClick}/>
+      ))}
     </div>
   );
 }
