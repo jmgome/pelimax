@@ -4,6 +4,7 @@ import LibertyHeader from "../components/basic/LibertyHeader/LibertyHeader";
 // import PelimaxCard from "../components/PelimaxCard/PelimaxCard";
 import axios from "axios";
 import { PeliMaxBody } from "../components/basic/PeliMaxBody/PeliMaxBody";
+import PeliMaxFooter from "../components/basic/PeliMaxFooter/PeliMaxFooter";
 
 const PageHome = () => {
   const [pelis, setPelis] = useState([]);
@@ -32,7 +33,9 @@ const PageHome = () => {
         />
       </div>
       <PeliMaxBody movies={pelis} search={search} />
+      <PeliMaxFooter/>
     </div>
+    
   );
 };
 
