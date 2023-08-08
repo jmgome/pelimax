@@ -207,7 +207,8 @@ export default function PrimarySearchAppBar() {
   );
 
   const peliculas = [
-    {  label: 'Spiderman'},
+    {  label: 'Spiderman'
+    },
     {
       
       label: 'Los Dioses Deben Estar Locos'
